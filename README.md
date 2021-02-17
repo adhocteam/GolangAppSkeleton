@@ -14,3 +14,8 @@ This is a skeleton for a golang web application optimized for simplicity and rap
 * run `modd`
     * if you chose not to install modd, build the app with `go build -o your_program_name`
 * modify code to see the results
+
+## Environment Variables
+
+* `PORT`: the port for the app to listen on. Defaults to 8080
+* `STATIC_BASE`: the base URL for static assets. Defaults to `/static`

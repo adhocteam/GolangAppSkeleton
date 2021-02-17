@@ -66,10 +66,10 @@ func staticHandler(dir string) http.HandlerFunc {
 	}
 }
 
-func env(key, adefault string) string {
+func env(key, defaultValue string) string {
 	val, ok := os.LookupEnv(key)
 	if !ok {
-		return adefault
+		return defaultValue
 	}
 	return val
 }

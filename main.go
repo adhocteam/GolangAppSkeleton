@@ -75,6 +75,7 @@ func env(key, defaultValue string) string {
 }
 
 func main() {
+	log.SetFlags(log.LstdFlags | log.Lshortfile)
 	server := App{
 		Port:       env("PORT", "8080"),
 		StaticBase: env("STATIC_BASE", "/static"),
